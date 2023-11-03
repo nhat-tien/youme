@@ -1,0 +1,62 @@
+@font-face {
+    font-family: proxima nova;
+    font-weight: 100;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Light.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 200;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-LightIt.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 300;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Regular.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Regular.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 500;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Semibold.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 600;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Semibold.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Semibold.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 800;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Semibold.ttf)
+}
+
+@font-face {
+    font-family: proxima nova;
+    font-weight: 800;
+    font-display: swap;
+    src: local(''),url(../public/fonts/ProximaNova-Semibold.ttf)
+}

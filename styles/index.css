@@ -1,0 +1,101 @@
+@import "font.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-prim1: #142D71;
+    --color-prim2: #00C1AA;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    font-family: "proxima nova";
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    min-width: 500;
+    padding: 0.7em 0; 
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.menu__item {
+    display: block;
+    padding: 0.2em 1.2em;
+}
+
+.menu__item:hover {
+    color: var(--color-prim2);
+}
+
+.round-btn {
+    padding: 0.5em 2.5em;
+    background-color: var(--color-prim1);
+    font-weight: 500;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.menu-btn {
+    display: none;
+    
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu.opened {
+    width: 100%;
+    padding: 0.6em 0.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.mobile-menu__item {
+    display: block;
+    padding: 0.2em 1.2em;
+}
+
+.mobile-menu__item:hover {
+    color: var(--color-prim2);
+}
+
+
+
+@media only screen and (max-width: 1035px) {
+    .menu {
+        display: none;
+    } 
+    .menu-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+}
