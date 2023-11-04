@@ -9,6 +9,7 @@
 :root {
     --color-prim1: #142D71;
     --color-prim2: #00C1AA;
+    --color-bg1: #e8f5fe;
     --color-text: #303336;
 }
 
@@ -38,6 +39,7 @@ html {
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 9999;
 }
 
 .nav {
@@ -225,6 +227,15 @@ html {
     line-height: 35px;
 }
 
+.heading2 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-prim1);
+    margin: 0.3em auto;
+    line-height: 20px;
+}
+
 .paragraph {
     margin: 0.8em auto;
 }
@@ -244,6 +255,7 @@ html {
 }
 .two-side-container__content {
     max-width: 50%;
+    padding-left: 1em;
 }
 .two-side-container__img {
     margin-top: 0.2px;
@@ -254,21 +266,18 @@ html {
 }
 
 .cta {
-    background-image: url(../public/images/cta-min.webp);
+    background-image: url(../public/images/cta-min.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     margin-bottom: 2em;
-    position: relative;
-    min-height: 300px;
+    min-height: 200px;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.cta__child {
-    position: absolute;
-    top: 60px;
-    left: 45px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta__heading {
@@ -277,12 +286,56 @@ html {
     color: #fff;
     margin-bottom: 0.5em;
     line-height: 40px;
+    text-align: center;
 }
 .cta__btn {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+}
+
+.hotline-container {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 12px;
+    cursor: pointer;
+}
+
+.hotline {
+    animation: hotline-animation 0.5s linear 1s infinite ;
+}
+
+@keyframes hotline-animation {
+    from {
+        width: 60px;
+        opacity: 80%;
+    } 
+    to {
+        width: 70px;
+        opacity: 100%;
+    }
+}
+
+.swiper-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.swiper-pagination1 {
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -317,5 +370,11 @@ html {
     .two-side-container__img {
         width: 100%;
         max-width: 100%;
+    }
+    .cta {
+        height: 300px;
+    }
+    .cta__heading {
+        font-size: 2rem;
     }
 }
