@@ -109,6 +109,18 @@ html {
     gap: 1em;
     height: auto;
     opacity: 100%;
+    animation: show 0.2s linear;
+}
+
+@keyframes show {
+    from {
+        height: 0;
+        opacity: 50%;
+    }
+    to {
+        height: 290px;
+        opacity: 100%;
+    }
 }
 
 .mobile-menu__item {
@@ -525,6 +537,9 @@ html {
     }
     .infomation {
         flex-direction: column;
+        padding: 1em 1.5em;
+    }
+    .service__card {
         padding: 1em 1.5em;
     }
     .contact {
