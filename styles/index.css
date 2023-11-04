@@ -9,6 +9,7 @@
 :root {
     --color-prim1: #142D71;
     --color-prim2: #00C1AA;
+    --color-text: #303336;
 }
 
 a {
@@ -23,6 +24,8 @@ ul {
 html {
     font-family: "proxima nova";
     font-size: 16px;
+    color: var(--color-text);
+    line-height: 25px;
 }
 
 .header {
@@ -60,6 +63,7 @@ html {
 
 .menu__item:hover {
     color: var(--color-prim2);
+    font-weight: 500;
 }
 
 .round-btn {
@@ -69,6 +73,17 @@ html {
     color: #fff;
     border-radius: 50px;
     cursor: pointer;
+    width: max-content;
+}
+
+.round-btn2 {
+    padding: 0.5em 2.5em;
+    background-color: #fff;
+    font-weight: 500;
+    color: var(--color-prim1);
+    border-radius: 50px;
+    cursor: pointer;
+    width: max-content;
 }
 
 .menu-btn {
@@ -98,6 +113,7 @@ html {
 
 .mobile-menu__item:hover {
     color: var(--color-prim2);
+    font-weight: 500;
 }
 
 
@@ -115,7 +131,7 @@ html {
 
 .label {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 14px;
     display: flex;
     align-items: center;
@@ -201,6 +217,74 @@ html {
     justify-content: center;
 }
 
+.heading {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-prim1);
+    margin: 0.6em auto;
+    line-height: 35px;
+}
+
+.paragraph {
+    margin: 0.8em auto;
+}
+
+.--color-prim2 {
+    color: var(--color-prim2)
+}
+
+.two-side-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 6em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.two-side-container__content {
+    max-width: 50%;
+}
+.two-side-container__img {
+    margin-top: 0.2px;
+    max-width: 50%;
+}
+.--reverse {
+    flex-direction: row-reverse;
+}
+
+.cta {
+    background-image: url(../public/images/cta-min.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 2em;
+    position: relative;
+    min-height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta__child {
+    position: absolute;
+    top: 60px;
+    left: 45px;
+}
+
+.cta__heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.5em;
+    line-height: 40px;
+}
+.cta__btn {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
 
 
 @media only screen and (max-width: 1035px) {
@@ -221,5 +305,17 @@ html {
     }
     .contact {
         padding: 0 1em;
+    }
+    .two-side-container {
+        flex-direction: column;
+        padding: 0 1.2em;
+    }
+    .two-side-container__content {
+        width: 100%;
+        max-width: 100%;
+    }
+    .two-side-container__img {
+        width: 100%;
+        max-width: 100%;
     }
 }
