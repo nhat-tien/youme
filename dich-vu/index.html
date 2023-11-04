@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOUME VIỆT NAM</title>
-    <link rel="stylesheet" href="../styles/index.css" />
-    <link rel="shortcut icon" href="./public/icons/favicon-miraicare.jpg" />
+    <title>Dịch vụ | YOUME VIỆT NAM</title>
+    <link rel="shortcut icon" href="../public/icons/favicon-miraicare.jpg" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../styles/index.css" />
 </head>
 <body>
     <header class="header">
@@ -18,7 +18,8 @@
             <div class="menu">
                 <a class="menu__item" href="/">Trang chủ</a>
                 <a class="menu__item" href="../gioi-thieu">Giới thiệu</a>
-                <a class="menu__item" href="../dich-vu">Dịch vụ</a>
+                <a class="menu__item active" href="../dich-vu">Dịch vụ</a>
+                <a class="menu__item" href="../benh-vien">Bệnh viện</a>
                 <a class="menu__item" href="../chuyen-gia">Chuyên gia</a>
                 <a class="round-btn" href="../lien-he">Liên hệ</a> 
             </div>
@@ -31,16 +32,24 @@
         <div class="mobile-menu" id="menu">
             <a class="mobile-menu__item" href="/">Trang chủ</a>
             <a class="mobile-menu__item" href="../gioi-thieu">Giới thiệu</a>
-            <a class="mobile-menu__item" href="../dich-vu">Dịch vụ</a>
+            <a class="mobile-menu__item active" href="../dich-vu">Dịch vụ</a>
+            <a class="mobile-menu__item" href="../benh-vien">Bệnh viện</a>
             <a class="mobile-menu__item" href="../chuyen-gia">Chuyên gia</a>
             <a class="mobile-menu__item" href="../lien-he">Liên hệ</a>
         </div>
     </header>
     <main class="main">
-        <section>
-            <div class="label">About</div>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__web-address">youme.com</div>
+                <h1 class="hero__heading">Dịch vụ của chúng tôi</h1>
+                <p class="hero_desc">YOUME kết nối bạn với các liệu pháp y học tiên tiến, mang lại cuộc sống chất lượng hơn.</p>
+            </div>
         </section>
     </main>
+    <a class="hotline-container">
+        <img class="hotline" src="../public/icons/phoneHotline-min.webp" alt="hotline" />
+    </a>
     <footer class="footer">
         <div class="infomation">
             <div class="contact">
@@ -61,10 +70,10 @@
             <div class="about">
                 <div class="about__title">Về Youme</div>
                 <ul class="about__list">
-                    <li class="about__item">Giới thiệu</li>
-                    <li class="about__item">Dịch vụ</li>
-                    <li class="about__item">Chuyên gia</li>
-                    <li class="about__item">Liên hệ</li>
+                    <li class="about__item"><a href="../gioi-thieu">Giới thiệu</a></li>
+                    <li class="about__item"><a href="../dich-vu">Dịch vụ</a></li>
+                    <li class="about__item"><a href="../chuyen-gia">Chuyên gia</a></li>
+                    <li class="about__item"><a href="../lien-he">Liên hệ</a></li>
                 </ul>
             </div>
             <div class="about">
