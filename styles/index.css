@@ -120,7 +120,7 @@ html {
 
 
 .main {
-    margin-top: 4.7em;
+    margin-top: 5em;
 }
 
 .banner {
@@ -244,6 +244,47 @@ html {
     color: var(--color-prim2)
 }
 
+.service-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.service__container {
+    background-image: url(../public/images/bg-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.service__card {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 24px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.service__icon {
+    width: 70px;
+}
+
+.service__heading {
+    color:  #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.service__desc {
+    color: #fff;
+}
+
 .two-side-container {
     display: flex;
     flex-direction: row;
@@ -251,7 +292,7 @@ html {
     align-items: flex-start;
     padding: 0 6em;
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 .two-side-container__content {
     max-width: 50%;
@@ -338,6 +379,27 @@ html {
     bottom: 0;
 }
 
+.reason-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+.reason {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.our-partner {
+    padding: 3em 4em 4em 4em;
+}
+
+/* ------- individual element -------  */
+.co-so-vat-chat {
+    padding: 3em;
+}
 
 
 @media only screen and (max-width: 1035px) {
@@ -366,15 +428,24 @@ html {
     .two-side-container__content {
         width: 100%;
         max-width: 100%;
+        padding: 0;
     }
     .two-side-container__img {
         width: 100%;
         max-width: 100%;
     }
     .cta {
+        padding: 0 0.5em;
         height: 300px;
     }
     .cta__heading {
-        font-size: 2rem;
+        font-size: 1.7rem;
+    }
+    /* individual element  */
+    .co-so-vat-chat {
+        padding: 0;
     }
 }
+
+
+
