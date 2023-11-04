@@ -272,15 +272,15 @@ html {
     background: rgba(255,255,255,.1);
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 24px;
-    padding: 1em;
+    padding: 2em 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .service__icon {
-    width: 70px;
+    width: 75px;
 }
 
 .service__heading {
@@ -309,6 +309,7 @@ html {
 .two-side-container__img {
     margin-top: 0.2px;
     max-width: 50%;
+    border-radius: 10px;
 }
 .--reverse {
     flex-direction: row-reverse;
@@ -355,6 +356,7 @@ html {
     right: 30px;
     bottom: 12px;
     cursor: pointer;
+    z-index: 99999;
 }
 
 .hotline {
@@ -379,7 +381,7 @@ html {
 
 .slide-img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .swiper-pagination1 {
@@ -434,6 +436,75 @@ html {
     margin: 0.3em 0;
 }
 
+.introduce-doctor {
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctor-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 34px;
+    width: 300px;
+    border-radius: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.doctor-card__avatar {
+    width: 200px;
+}
+
+.doctor-card__name {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.doctor-card__role {
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    margin: 7px auto;
+    text-align: center;
+    color: var(--color-prim1);
+}
+
+.doctor-card__desc {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+.introduce-hospital {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.hospital__heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1em;
+}
+
+
+
+
+
 /* ------- individual element -------  */
 .co-so-vat-chat {
     padding: 3em;
@@ -479,13 +550,17 @@ html {
     .cta__heading {
         font-size: 1.7rem;
     }
-    /* individual element  */
-    .co-so-vat-chat {
-        padding: 0;
+    .hospital__heading {
+        margin-top: 1em;
     }
     .hero {
         padding: 1em;
     }
+    /* individual element  */
+    .co-so-vat-chat {
+        padding: 0;
+    }
+    
 }
 
 
