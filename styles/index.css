@@ -523,6 +523,10 @@ html {
     padding: 2em 0 2em 3em;
 }
 
+.core-value__heading {
+    margin-left: 3em;
+}
+
 .value-container {
     display: flex;
     flex-direction: row;
@@ -621,6 +625,13 @@ html {
     }
     .hero {
         padding: 1em;
+    }
+    .core-value {
+        padding: 0.5em;
+    }
+    .core-value__heading {
+        text-align: center;
+        margin-left: 0;
     }
     /* individual element  */
     .co-so-vat-chat {
