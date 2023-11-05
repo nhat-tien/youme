@@ -109,6 +109,7 @@ html {
     gap: 1em;
     height: auto;
     opacity: 100%;
+    overflow: hidden;
     animation: show 0.2s linear;
 }
 
@@ -257,7 +258,7 @@ html {
 }
 
 .paragraph {
-    margin: 0.8em auto;
+    margin: 1em auto;
 }
 
 .--color-prim2 {
@@ -393,7 +394,7 @@ html {
 
 .slide-img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .swiper-pagination1 {
@@ -494,7 +495,7 @@ html {
 }
 
 .doctor-card__desc {
-    font-weight: 500;
+    font-weight: 400;
     text-align: justify;
     font-size: 1rem;
     margin-bottom: 1em;
@@ -513,7 +514,57 @@ html {
     margin-bottom: 1em;
 }
 
+.align-items-center {
+    align-items: center;
+    gap: 40px;
+}
 
+.core-value {
+    padding: 2em 0 2em 3em;
+}
+
+.value-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.value__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2em 2em 3em 2em;
+    max-width: 350px;
+}
+
+.value__card--1 {
+    border: 0.5px solid #6f70743d;
+    background-color: #b7cefb26;
+    border-radius: 16px;
+}
+
+.value__card--2 {
+    border: 1px solid #6f70743d;
+    background: linear-gradient(26.57deg, #00C1AA -21.26%, #007FB1 33.3%, #0061B4 66.78%);
+    border-radius: 16px;
+    color: #fff;
+}
+
+.value__card--3 {
+    border: 0.5px solid #6f70743d;
+    background: linear-gradient(293.31deg, #C3E3FD 33.56%, rgba(231, 254, 250, 0.97) 112.06%);
+    border-radius: 16px;
+}
+
+.value__heading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
 
 
 
