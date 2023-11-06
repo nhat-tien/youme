@@ -576,11 +576,12 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 1em 0.3em;
 }
 
 .our-service__card {
-    height: 350px;
-    width: 400px;
+    height: 330px;
+    width: 350px;
     position: relative;
 }
 
