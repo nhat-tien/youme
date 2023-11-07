@@ -616,6 +616,19 @@ html {
     padding: 2em 1em;
 }
 
+.article {
+    padding: 2em 4em;
+}
+
+.article p {
+    margin: 1em 0;
+}
+
+.article ul {
+    list-style: disc;
+    margin-left: 1em;
+}
+
 
 /* ------- custom element -------  */
 .co-so-vat-chat {
@@ -681,6 +694,9 @@ html {
     /* custom element  */
     .co-so-vat-chat {
         padding: 0;
+    }
+    .article {
+        padding: 2em 1em;
     }
     
 }
